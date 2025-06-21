@@ -57,16 +57,90 @@
           </svg>
         </button>
       </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link mobile-studio" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/index.html">Portfolio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="/index.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-contacts">
+            <ul class="mobile-contacts-list">
+              <li class="mobile-contacts-item">
+                <a
+                  class="mobile-contacts-link mobile-email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <div class="soc-link">
+            <ul class="icon-list">
+              <li class="icon-item">
+                <a class="icon-link" href=""
+                  ><svg class="icon-image" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a class="icon-link" href=""
+                  ><svg class="icon-image" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a class="icon-link" href=""
+                  ><svg class="icon-image" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a class="icon-link" href=""
+                  ><svg class="icon-image" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="hero, hiden">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-image-button" type="submit">Order Service</button>
         </div>
       </section>
 
-      <section class="section-one, hiden">
+      <section class="section-one">
         <div class="container one-container">
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="one-list">
@@ -122,7 +196,7 @@
         </div>
       </section>
 
-      <section class="section-two, hiden">
+      <section class="section-two">
         <div class="container container-two">
           <h2 class="two-title">Our Team</h2>
           <ul class="two-list">
@@ -298,7 +372,7 @@
         </div>
       </section>
 
-      <section class="section-three, hiden">
+      <section class="section-three">
         <div class="container container-three">
           <h2 class="three-title">Our Portfolio</h2>
           <ul class="three-list">
@@ -427,7 +501,7 @@
       </section>
     </main>
 
-    <footer class="page-footer, hiden">
+    <footer class="page-footer">
       <div class="container container-footer">
         <div class="column-one">
           <a class="logo footer-logo" href="./index.html"
@@ -492,7 +566,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open, hiden" data-modal>
+    <div class="backdrop is-open, hidden" data-modal>
       <div class="modal">
         <button type="button" class="close">
           <svg class="icon-close" width="8" height="8">
