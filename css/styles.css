@@ -292,6 +292,13 @@ address {
   margin-top: 24px;
   margin-bottom: auto;
 }
+.mobile-nav-item {
+  margin-bottom: 40px;
+}
+.last-item {
+  margin-bottom: 0;
+}
+
 .mobile-nav-link {
   display: block;
   font-family: "Roboto", sans-serif;
@@ -300,7 +307,6 @@ address {
   line-height: 1.11111;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 40px;
 }
 .mobile-contacts-item {
   margin-bottom: 24px;
@@ -311,13 +317,14 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-bottom: 24px;
 }
-.mobile-email,
+.mobile-telefon,
 .mobile-studio {
   color: #4d5ae5;
 }
-
+.mobile-email {
+  margin-bottom: 0;
+}
 .icon-list-mobile {
   display: flex;
   margin-top: 48px;
@@ -510,6 +517,9 @@ address {
   .one-item {
     width: calc((100% - 24px) / 2);
   }
+  .one-title {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1158px) {
   .section-one {
@@ -648,7 +658,7 @@ address {
     width: calc((100% - 24px) / 2);
   }
   .container-two {
-    width: 552px;
+    width: 584px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -679,7 +689,7 @@ address {
   flex-wrap: wrap;
 }
 .three-item {
-  width: 228px;
+  width: 100%;
   cursor: pointer;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -705,6 +715,11 @@ address {
   padding: 32px 16px;
 }
 .project-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
   margin-bottom: 8px;
 }
 
@@ -718,10 +733,16 @@ address {
   .three-item {
     width: calc((100% - 24px) / 2);
   }
+  .three-list {
+    row-gap: 72px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .section-three {
     padding: 120px 0;
+  }
+  .three-list {
+    row-gap: 40px;
   }
   .three-item {
     width: calc((100% - 48px) / 3);
@@ -769,14 +790,16 @@ address {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  row-gap: 16px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
+}
+.column-three {
+  margin-bottom: 0;
 }
 .footer-logo {
   display: inline-block;
-  margin-bottom: 16px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 16px;
 }
 .footer-logo .logo-part {
   color: #f4f4fd;
@@ -827,6 +850,7 @@ address {
   align-items: center;
   row-gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .email-form {
@@ -880,7 +904,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .container-footer {
-    width: 552px;
+    width: 584px;
   }
   .container-footer {
     display: flex;
@@ -898,6 +922,9 @@ address {
   .subscribe-form {
     gap: 24px;
   }
+  .text-footer-sbscribe {
+    text-align: left;
+  }
   .email-form {
     width: 264px;
   }
@@ -909,18 +936,15 @@ address {
   .page-footer {
     padding: 100px 0;
   }
-  .container-footer {
-    width: 100%;
-  }
   .column-one {
     margin-right: 120px;
   }
   .container-footer {
     display: flex;
     align-items: baseline;
-  }
-  .container-footer {
-    padding-left: 0;
+    padding-left: 15px;
+    width: 100%;
+    gap: 0;
   }
 }
 
@@ -956,7 +980,7 @@ address {
   width: 288px;
   min-height: 623px;
   border-radius: 4px;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
 
   transform: translate(-50%, -50%);
 
@@ -1019,7 +1043,7 @@ address {
 
 /*form*/
 .form-modal {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .form-label {
@@ -1140,6 +1164,8 @@ address {
   min-width: 169px;
   height: 56px;
   border-radius: 4px;
+  align-content: center;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -1147,19 +1173,16 @@ address {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
-  background-color: #4d5ae5;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
+  margin: 24px auto;
 }
 @media screen and (min-width: 768px) {
-  .backdrop {
-    display: none;
-  }
-}
-@media screen and (min-width: 1158px) {
-  .backdrop {
-    display: none;
+  .modal {
+    width: 408px;
+    height: 584px;
+    padding: 72px 24px 0px 24px;
   }
 }
